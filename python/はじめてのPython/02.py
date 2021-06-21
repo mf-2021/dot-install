@@ -1,9 +1,4 @@
-# print("hello fujiwara")
-# print("hello fujiwara again")
-
-name = "FUJIWARA"
-
-print(name)
+name = input()
 
 print("hello %s" %name)
 print("hello %s again" %name)
