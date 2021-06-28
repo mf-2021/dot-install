@@ -1,28 +1,18 @@
-# 関数
+# クラス
 
-# msg = "hello" # グローバル変数
+# user_name = "taguchi"
+# user_score = 10
 
-# def say_hi():
-#     msg = ("hi") # ローカル変数
-#     print(msg)
+class User:
+    pass
 
-# say_hi()
-# print(msg)
+tom = User() # インスタンス
+tom.name = "tom"
+tom.name = 20
 
-# msg = "hello" # グローバル変数
+bob = User()
+bob.name = "bob"
+bob.level = 5
 
-# def say_hi():
-#     print(msg)
-
-# say_hi()
-# print(msg)
-
-msg = "hello" # グローバル変数
-
-def say_hi():
-    global msg
-    msg = "hello global"
-    print(msg)
-
-say_hi()
-print(msg)
+print(tom.name)
+print(bob.level)
