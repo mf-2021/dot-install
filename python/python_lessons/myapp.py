@@ -15,19 +15,18 @@
 # bob.level = 5
 
 
+# クラス
+
 class User:
-    """
-    コンストラクタ（Rubyでいう"def initialize"）
-    # ここで設計図（クラス）を作っているが、
-    上の例では"pass"で空のクラスを作っている
-    """
+    # クラス変数
+    count = 0
     def __init__(self, name):
-        # インスタンス変数
+        User.count += 1
         self.name = name
 
+print(User.count) # 0
 tom = User("tom")
 bob = User("bob")
+print(User.count) # 2
 
-
-print(tom.name)
-print(bob.name)
+print(tom.count)
