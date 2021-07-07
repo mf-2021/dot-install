@@ -23,10 +23,18 @@ class User:
     def __init__(self, name):
         User.count += 1
         self.name = name
+    # インスタンスメソッド
+    def say_hi(self):
+        print("hi {0}".format(self.name))
+    # クラスメソッド
+    @classmethod
+    def show_info(cls):
+        print("{0} instances".format(cls.count))
 
-print(User.count) # 0
 tom = User("tom")
 bob = User("bob")
-print(User.count) # 2
 
-print(tom.count)
+User.show_info()
+
+# tom.say_hi()
+# bob.say_hi()
