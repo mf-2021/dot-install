@@ -13,7 +13,7 @@
 # bob = User()
 # bob.name = "bob"
 # bob.level = 5
-
+# python
 
 # クラス
 
@@ -34,6 +34,7 @@ class User:
 tom = User("tom")
 bob = User("bob")
 
+User.show_info()
 User.show_info()
 
 # tom.say_hi()
