@@ -1,22 +1,14 @@
-# クラスの多重継承
-# A, B -> C
+# モジュール
 
-class A:
-    def say_a(self):
-        print("A!")
-    def say_hi(self):
-        print("hi! from A!")
-class B:
-    def say_b(self):
-        print("B!")
-    def say_hi(self):
-        print("hi! from B!")
+# import user
+# from user import AdminUser
+from user import AdminUser, User
 
-# class C(A, B):
-class C(B, A):
-    pass
+# bob = user.AdminUser("bob", 23)
+bob = AdminUser("bob", 23)
 
-c = C()
-# c.say_a()
-# c.say_b()
-c.say_hi()
+tom = User("bob", 23)
+
+print(bob.name)
+bob.say_hi()
+bob.say_hello()
