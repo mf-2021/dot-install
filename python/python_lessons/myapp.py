@@ -1,37 +1,18 @@
-# モジュール
+# リスト型とタプル
+# 集合型
+# 辞書型
 
-# import user
-# from user import AdminUser
-# from user import AdminUser, User
+# リスト型
 
-# # bob = user.AdminUser("bob", 23)
-# bob = AdminUser("bob", 23)
+scores = [40, 50]
+# print(scores[0]) # 40
+# scores[0] = 45
+# print(len(scores)) # 2
+# scores.append(100)
+# print(scores)
 
-# tom = User("bob", 23)
+# for score in scores:
+#     print(score)
 
-# print(bob.name)
-# bob.say_hi()
-# bob.say_hello()
-
-# 例外処理
-
-class MyException(Exception):
-    pass
-
-def div(a, b):
-    try:
-        if (b < 0):
-            raise MyException("not minus")
-        print(a / b)
-    except ZeroDivisionError:
-        print("not by zero!")
-    except MyException as e:
-        print(e)
-    else:
-        print("no exception!")
-    finally:
-        print("-- end --")
-
-div(10, -3)
-# div(10, 3)
-# div(10, 0)
+for i, score in enumerate(scores):
+    print("{0}: {1}".format(i, score))
