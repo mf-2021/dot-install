@@ -47,8 +47,19 @@
 # print(a)
 # print(len(a))
 
-a = {1, 3, 5, 8}
-b = {3, 5, 8, 9}
-print(a | b)
-print(a & b)
-print(a - b)
+# a = {1, 3, 5, 8}
+# b = {3, 5, 8, 9}
+# print(a | b)
+# print(a & b)
+# print(a - b)
+
+# 辞書型
+sales = {"taguchi": 200, "fkoji": 400}
+# print(sales["taguchi"])
+# sales["taguchi"] = 300
+# sales["dotinstall"] = 500
+# del(sales["fkoji"])
+# print(sales)
+
+for key, value in sales.items():
+    print("{0}: {1}".format(key, value))
