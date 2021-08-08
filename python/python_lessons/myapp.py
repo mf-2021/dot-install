@@ -76,13 +76,22 @@
 # for score in scores:
 #     print(score)
 
-def get_infinite(): #ジェネレータ
-    i = 0
-    while True:
-        yield i * 2
-        i += 1
+# def get_infinite(): #ジェネレータ
+#     i = 0
+#     while True:
+#         yield i * 2
+#         i += 1
 
-g = get_infinite()
-print(next(g))
-print(next(g))
-print(next(g))
+# g = get_infinite()
+# print(next(g))
+# print(next(g))
+# print(next(g))
+
+# map（関数、イテレータ）
+# def triple(n):
+#     return n * 3
+
+# print(list(map(triple, [1, 2, 3])))
+
+# lambda 引数：　処理
+print(list(map(lambda n: n * 3, [1, 2, 3])))
